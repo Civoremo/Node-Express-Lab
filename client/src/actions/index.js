@@ -4,7 +4,7 @@ export const FETCH_POSTS_START = 'FETCH_POSTS_START';
 export const FETCH_POSTS_SUCCESS = 'FETCH_POSTS_SUCCESS';
 export const FETCH_POSTS_FAILURE = 'FETCH_POSTS_FAILURE';
 
-const baseUrl = 'http://localhost:5000/';
+const baseUrl = 'http://localhost:5000/api/posts';
 
 export const fetchPosts = () => dispatch => {
     dispatch({ type: FETCH_POSTS_START });
