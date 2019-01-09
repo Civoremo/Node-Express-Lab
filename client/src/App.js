@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import './App.css';
 
 import PostsList from './components/postsList';
@@ -17,9 +17,21 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Route exact path='/' render={props => <PostsList {...props}/>}></Route>
-        <Route exact path='/postById/:postId' render={props => <PostWithId {...props}/>}></Route>
+      <div>
+        <div>
+          <nav className='nav-content-container'>
+            <div>
+              <Link exact to='/' className='nav-link-styling'>PostPosts+</Link>
+            </div>
+            <div className='nav-link-addPost'>
+              +
+            </div>
+          </nav>
+        </div>
+        <div className="App">
+          <Route exact path='/' render={props => <PostsList {...props}/>}></Route>
+          <Route exact path='/postById/:postId' render={props => <PostWithId {...props}/>}></Route>
+        </div>
       </div>
     );
   }

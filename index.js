@@ -81,6 +81,7 @@ server.put('/api/posts/:id', (req, res) => {
             else if(title && contents) {
                 db.update(id, req.body)
                     .then(result => {
+                        console.log(result);
                         res.status(200).json(result);
                     })
                     .catch(err => {

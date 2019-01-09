@@ -12,7 +12,7 @@ class PostsList extends React.Component {
     }
 
     componentDidMount() {
-        console.log('attempting to fetch posts')
+        // console.log('attempting to fetch posts')
         this.props.fetchPosts();
     }
 
@@ -43,7 +43,7 @@ class PostsList extends React.Component {
 }
 
 const mapStateToProps = state => {
-    console.log('trying to get posts')
+    // console.log('trying to get posts')
     return {
         allPosts: state.posts,
     };

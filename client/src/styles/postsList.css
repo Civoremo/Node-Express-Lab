@@ -1,7 +1,8 @@
 .post-content-container {
-    border: 1px solid lightgray;
+    border: 2px solid lightgray;
     margin: 20px 0;
     width: 600px;
+    padding: 20px 20px;
 }
 
 .post-content-span {
@@ -11,4 +12,19 @@
 a {
     text-decoration: none;
     color: #222222;
+}
+
+.singlePost-button {
+    width: 100px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.singlePost-button:hover {
+    cursor: pointer;
+}
+
+.singlePost-button-container {
+    display: flex;
+    justify-content: flex-end;
 }
